@@ -1,6 +1,6 @@
 ﻿
 
-//finding duplicates in array
+//finding duplicates in array v1
 
 //int [] array = { 3,30, 8,5,5,5, 1,3, 5 ,3 ,320 };
 
@@ -26,6 +26,18 @@
 //{
 //    Console.WriteLine(item);
 //}
+
+// //finding duplicates in array v2
+// //int [] array = { 3,30, 8,5,5,5, 1,3, 5 ,3 ,320 };
+
+// for(int i = 0; i < array.Length-1;i++){
+//     for(int j = i+1;j<array.Length-1;j++){
+//         if(array[i] == array[j]){
+//            Console.WriteLine("duplicated element:",array[i]);
+//         }
+//     }
+// }
+
 
 
 
