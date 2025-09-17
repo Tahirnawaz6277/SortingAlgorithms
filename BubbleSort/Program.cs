@@ -28,7 +28,7 @@
 //}
 
 // //finding duplicates in array v2
-// //int [] array = { 3,30, 8,5,5,5, 1,3, 5 ,3 ,320 };
+ //int [] array = { 3,30, 8,5,5,5, 1,3, 5 ,3 ,320 };
 
 // for(int i = 0; i < array.Length-1;i++){
 //     for(int j = i+1;j<array.Length-1;j++){
@@ -39,10 +39,18 @@
 // }
 
 
+// //reverse array without using builtin functions
+// //int [] array = { 3,30, 8,5,5,5, 1,3, 5 ,3 ,320 };
+
+// for(int i = array.Length-1; i >= 0;i--){
+//     Console.WriteLine("print array in reverse order :",array[i]);   
+// }
 
 
 
-// Buble Sort Algorithm
+
+
+// Buble Sort Algorithm  
 
 int[] Array = { 30, 8, 5, 5, 5, 1, 3, 5, 3, 320 };
 
@@ -73,6 +81,8 @@ static void printArray(int[] array)
     }
     Console.WriteLine();
 }
+
+
 
 
 
