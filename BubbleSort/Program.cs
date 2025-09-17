@@ -50,7 +50,7 @@
 
 
 
-// Buble Sort Algorithm  
+// Buble Sort Algorithm, Its Time Complexity is O(n²)
 
 int[] Array = { 30, 8, 5, 5, 5, 1, 3, 5, 3, 320 };
 
@@ -81,6 +81,25 @@ static void printArray(int[] array)
     }
     Console.WriteLine();
 }
+
+
+// //Selection sort Algorithm, Its Time Complexity O(n²)
+//  int [] array = { 3,30, 8,5,5,5, 1,3, 5 ,3 ,320 };
+
+// for(int i = 0; i < array.Length-1; i++){
+//        int smallestIndex = i;
+//     for(int j = i+1; j<array.Length; j++){
+//         if(array[j] < array[smallestIndex]){
+//             smallestIndex = j;
+//         }    
+//     }
+//   // Swap the found minimum element with the first element
+// int temp =  array[i]; 
+//  array[i] = array[smallestIndex];
+//  array[smallestIndex] = temp;
+// }
+
+
 
 
 
