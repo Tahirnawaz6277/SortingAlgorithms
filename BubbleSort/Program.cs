@@ -99,6 +99,37 @@ static void printArray(int[] array)
 //  array[smallestIndex] = temp;
 // }
 
+//ref and out usage:
+//In C#, ref and out keywords are used to pass arguments by reference, allowing a method to modify the original variable passed from the calling code. 
+
+  //Using out:
+        //Declaration: Declare the parameter in the method signature with the out keyword.
+             static void GetNewValueOut(out int outn)
+            {
+                outn = 10; // Must assign a value before the method returns
+            }
+        //Calling: When calling the method, the argument passed can be uninitialized, but it must be preceded by the out keyword.
+        int outn; // No initialization required
+        GetNewValueOut(out outn);
+           Console.WriteLine (outn); // outn is now 10
+
+        //Purpose: Use out when a method is intended to assign a new value to a variable, The method must assign a value to the out parameter before it returns.
+
+
+        // Using ref:
+      //Declaration: Declare the parameter in the method signature with the ref keyword.
+        
+        static void UpdateExistingValueRef(ref string refn)
+        {
+            refn = "29"; // Modifies the original 'refn'
+        }
+        
+        //Calling: When calling the method, the argument passed must be initialized and also preceded by the ref keyword.
+        string refn = "100";
+        UpdateExistingValueRef(ref refn);
+         Console.WriteLine (refn); // refn is now "29"
+         
+         //Purpose: Use ref when you want a method to potentially modify an existing, initialized variable.
 
 
 
